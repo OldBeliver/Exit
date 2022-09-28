@@ -7,18 +7,12 @@ namespace Exit
         static void Main(string[] args)
         {
             string password = "exit";
-            string userInput;
-            bool doRepeat = true;
+            string userInput = "";            
 
-            while (doRepeat)
+            while (userInput != password)
             {
                 Console.WriteLine($"Введите команду для выхода:");
-                userInput = Console.ReadLine();
-
-                if(userInput == password)
-                {
-                    doRepeat = false;
-                }
+                userInput = Console.ReadLine();                
             }
 
             Console.WriteLine($"Выход подтвержден");
