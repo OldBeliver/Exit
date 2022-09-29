@@ -6,10 +6,10 @@ namespace Exit
     {
         static void Main(string[] args)
         {
-            string password = "exit";
+            string exitCommand = "exit";
             string userInput = "";            
 
-            while (userInput != password)
+            while (userInput != exitCommand)
             {
                 Console.WriteLine($"Введите команду для выхода:");
                 userInput = Console.ReadLine();                
